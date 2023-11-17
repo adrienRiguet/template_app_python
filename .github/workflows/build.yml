@@ -27,7 +27,7 @@ jobs:
         uses: docker/login-action@v2 # Follow the link to read more about this action
         with:
           registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
+          username: adrienriguet
           password: ${{ secrets.GITHUB_TOKEN }} # What is this GITHUB_TOKEN ? Why is it working here ?
           logout: true
       - name: Build and push
